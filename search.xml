@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[测试工具分享----Appetizer]]></title>
+    <url>%2F2018%2F08%2F02%2F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB-Appetizer%2F</url>
+    <content type="text"><![CDATA[工具介绍：Appetizer 通过DEX插桩的方法，全自动地向APP内多处插入代码，在程序运行的过程中，监控异常和闪退、搜集主线程卡顿与耗时操作、HTTP/HTTPS请求和响应、CPU和Java堆内存消耗等。工具地址：https://appetizer.io/cn/使用：1.上传APK进行插桩2.使用插桩后的app进行手动测试，或者结合Monkey；Appcrawler工具自动遍历测试，输出测试报告。3.分析报告报告样式：]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[test5]]></title>
     <url>%2F2018%2F08%2F02%2Ftest5%2F</url>
     <content type="text"></content>
