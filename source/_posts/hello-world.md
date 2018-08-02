@@ -1,38 +1,34 @@
 ---
-title: Hello World
+iOS Monkey配置
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+FastMonkey：https://github.com/zhangzhao4444/Fastmonkey
+1.clone工程：
+$ git clone https://github.com/zhangzhao4444/Fastmonkey.git
+2.安装第三方库：
+$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master
+$ carthage update
+3.Xcode相关配置：
+（1）导入缺失文件
+（2）签名
+（3）删除XCTestWD-Bridging-Header.h
+（4）添加 #import "XCTestWDApplication.h" 
 
-## Quick Start
+4.启动监听服务：
+$ iproxy 8001 8001
+5.运行工程：
+$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master/XCTestWD
+$ xcodebuild -project XCTestWD.xcodeproj \
+           -scheme XCTestWDUITests \
+           -destination 'platform=iOS,name=test' \
+           XCTESTWD_PORT=8001 \
+           clean test
+PS:需要修改name为测试设备名称
+6.执行Monkey：
+$ curl -X POST -H "Content-Type:application/json" \
+              -d "{\"desiredCapabilities\":{\"deviceName\":\"test\",\"platformName\":\"iOS\", \"bundleId\":\"com.vipkid.vipkidParentDev\”,\”autoAcceptAlerts\":\"false\"}}" \
+              http://127.0.0.1:8001/wd/hub/monkey
+PS:需要修改bundleId和deviceName
 
-### Create a new post
 
-``` bash
-$ hexo new "My New Post"
-```
+ 
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
