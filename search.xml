@@ -31,8 +31,8 @@
     <content type="text"><![CDATA[##代码引用hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh123def Test(): if i in range(9): print(i) 1ssh root@138.128.203.69 -p 9005]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title></title>
     <url>%2F2017%2F12%2F04%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[iOS Monkey配置FastMonkey：https://github.com/zhangzhao4444/Fastmonkey1.clone工程：$ git clone https://github.com/zhangzhao4444/Fastmonkey.git2.安装第三方库：$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master$ carthage update3.Xcode相关配置：（1）导入缺失文件（2）签名（3）删除XCTestWD-Bridging-Header.h（4）添加 #import “XCTestWDApplication.h” 4.启动监听服务：$ iproxy 8001 80015.运行工程：$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master/XCTestWD$ xcodebuild -project XCTestWD.xcodeproj \ -scheme XCTestWDUITests \ -destination ‘platform=iOS,name=test’ \ XCTESTWD_PORT=8001 \ clean testPS:需要修改name为测试设备名称6.执行Monkey：$ curl -X POST -H “Content-Type:application/json” \ -d “{\”desiredCapabilities\”:{\”deviceName\”:\”test\”,\”platformName\”:\”iOS\”, \”bundleId\”:\”com.vipkid.vipkidParentDev\”,\”autoAcceptAlerts\”:\”false\”}}” \ http://127.0.0.1:8001/wd/hub/monkeyPS:需要修改bundleId和deviceName]]></content>
   </entry>
 </search>
