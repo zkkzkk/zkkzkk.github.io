@@ -2,7 +2,7 @@
 title: 测试工具分享----Appetizer
 date: 2018-08-02 15:11:17
 tags:
-thumbnail:https://lh3.googleusercontent.com/-bovNcYPb0qM/W2KvlTs7TjI/AAAAAAAACno/cEyjFKYrRKwoMhD7EwaZbCWBAi5HpwusQCHMYCw/I/%255BUNSET%255D
+
 ---
 工具介绍：Appetizer 通过DEX插桩的方法，全自动地向APP内多处插入代码，在程序运行的过程中，监控异常和闪退、搜集主线程卡顿与耗时操作、HTTP/HTTPS请求和响应、CPU和Java堆内存消耗等。
 工具地址：https://appetizer.io/cn/
