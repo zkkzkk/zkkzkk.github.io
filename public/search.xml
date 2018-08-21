@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[测试页面8]]></title>
+    <url>%2F2018%2F08%2F21%2F%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A28%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[测试页面7]]></title>
+    <url>%2F2018%2F08%2F21%2F%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A27%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2018%2F08%2F21%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[iOS Monkey配置FastMonkey：https://github.com/zhangzhao4444/Fastmonkey1.clone工程：$ git clone https://github.com/zhangzhao4444/Fastmonkey.git2.安装第三方库：$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master$ carthage update3.Xcode相关配置：（1）导入缺失文件（2）签名（3）删除XCTestWD-Bridging-Header.h（4）添加 #import “XCTestWDApplication.h” 4.启动监听服务：$ iproxy 8001 80015.运行工程：$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master/XCTestWD$ xcodebuild -project XCTestWD.xcodeproj \ -scheme XCTestWDUITests \ -destination ‘platform=iOS,name=test’ \ XCTESTWD_PORT=8001 \ clean testPS:需要修改name为测试设备名称6.执行Monkey：$ curl -X POST -H “Content-Type:application/json” \ -d “{\”desiredCapabilities\”:{\”deviceName\”:\”test\”,\”platformName\”:\”iOS\”, \”bundleId\”:\”com.vipkid.vipkidParentDev\”,\”autoAcceptAlerts\”:\”false\”}}” \ http://127.0.0.1:8001/wd/hub/monkeyPS:需要修改bundleId和deviceName]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[测试页面6]]></title>
     <url>%2F2018%2F08%2F21%2F%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A26%2F</url>
     <content type="text"></content>
@@ -44,10 +59,5 @@
     <title><![CDATA[使用Mockito进行Junit单元测试]]></title>
     <url>%2F2017%2F12%2F05%2F%E4%BD%BF%E7%94%A8Mockito%E8%BF%9B%E8%A1%8CJunit%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%2F</url>
     <content type="text"><![CDATA[##代码引用hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh123def Test(): if i in range(9): print(i) 1ssh root@138.128.203.69 -p 9005]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2017%2F12%2F04%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[iOS Monkey配置FastMonkey：https://github.com/zhangzhao4444/Fastmonkey1.clone工程：$ git clone https://github.com/zhangzhao4444/Fastmonkey.git2.安装第三方库：$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master$ carthage update3.Xcode相关配置：（1）导入缺失文件（2）签名（3）删除XCTestWD-Bridging-Header.h（4）添加 #import “XCTestWDApplication.h” 4.启动监听服务：$ iproxy 8001 80015.运行工程：$ cd /Users/xxxxx/Fastmonkey/XCTestWD-master/XCTestWD$ xcodebuild -project XCTestWD.xcodeproj \ -scheme XCTestWDUITests \ -destination ‘platform=iOS,name=test’ \ XCTESTWD_PORT=8001 \ clean testPS:需要修改name为测试设备名称6.执行Monkey：$ curl -X POST -H “Content-Type:application/json” \ -d “{\”desiredCapabilities\”:{\”deviceName\”:\”test\”,\”platformName\”:\”iOS\”, \”bundleId\”:\”com.vipkid.vipkidParentDev\”,\”autoAcceptAlerts\”:\”false\”}}” \ http://127.0.0.1:8001/wd/hub/monkeyPS:需要修改bundleId和deviceName]]></content>
   </entry>
 </search>
